@@ -45,9 +45,10 @@
 <br>
 
 ### Demo 🎥
-![waffy!](waffy-1-readme.PNG)
-![waffy!](waffy-2-readme.PNG)
-![waffy!](waffy-3-readme.PNG)
-![waffy!](waffy-6-readme.PNG)
-![waffy!](waffy-4-readme.PNG)
-![waffy!](waffy-5-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-1-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-2-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-3-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-6-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-4-readme.PNG)
+![waffy!](https://github.com/Fer-Feri/Fer-Feri/blob/main/waffy-5-readme.PNG)
+
