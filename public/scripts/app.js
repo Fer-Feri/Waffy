@@ -1538,7 +1538,7 @@ class waffy {
       const updatePaginationBtn = () => {
         this.paginationShopContainer = document.getElementById("pagination-Shop-Container");
         this.paginationShopContainer.innerHTML = "";
-        let numberPage = Math.ceil(products.length / numberProductValue);
+        let numberPage = Math.ceil(allProducts.length / numberProductValue);
 
         for (let i = 1; i <= numberPage; i++) {
           let btnPageHtml = `
