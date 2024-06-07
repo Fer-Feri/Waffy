@@ -17,6 +17,8 @@
 <img width="30px" src="https://github.com/Fer-Feri/Fer-Feri/blob/main/icons8-html5-96.png"> <img width="30px" src="https://github.com/Fer-Feri/Fer-Feri/blob/main/icons8-css3-96.png"> <img width="30px" src="https://github.com/Fer-Feri/Fer-Feri/blob/main/icons8-js-96.png"> <img width="30px" src="https://github.com/Fer-Feri/Fer-Feri/blob/main/icons8-tailwind-css-96.png">
 
 <br>
+
+
 ### Capabilities 🤠
 <img src="https://img.shields.io/badge/Dark%20Mode-133955">
 <img src="https://img.shields.io/badge/Search%20Product-007F73">
@@ -25,6 +27,8 @@
 <img src="https://img.shields.io/badge/Coupon%20Code-EE4E4E">
 
 <br>
+
+
 ### Color Reference 🌨
 <img src="https://img.shields.io/badge/firstColor-D25E16-orange">
 <img src="https://img.shields.io/badge/firstColor-F4B323-yellow">
