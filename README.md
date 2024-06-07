@@ -30,6 +30,7 @@
 
 
 ### Color Reference 🌨
+<img src="https://img.shields.io/badge/FisrColor-gold">
 <img src="https://img.shields.io/badge/firstColor-D25E16-orange">
 <img src="https://img.shields.io/badge/firstColor-F4B323-yellow">
 
