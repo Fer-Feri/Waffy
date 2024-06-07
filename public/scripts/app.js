@@ -1469,7 +1469,7 @@ class waffy {
       const updatePaginationBtn = () => {
         this.paginationShopContainer = document.getElementById("pagination-Shop-Container");
         this.paginationShopContainer.innerHTML = "";
-        let numberPage = Math.ceil(products.length / numberProductValue);
+        let numberPage = Math.ceil(allProducts.length / numberProductValue);
 
         for (let i = 1; i <= numberPage; i++) {
           let btnPageHtml = `
@@ -2365,7 +2365,7 @@ class waffy {
   // show cart product from local
   showProductCartLocal() {
     window.addEventListener("load", () => {
-      const arrayCartProduct = JSON.parse(localStorage.getItem("cart"));
+      const arrayCartProduct = JSON.parse(localStorage.getItem("cart")) || [];
       if (arrayCartProduct) {
         this.cartProductContainer.innerHTML = "";
         arrayCartProduct.forEach((product) => {
