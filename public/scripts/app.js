@@ -2019,7 +2019,7 @@ class waffy {
   // show recent comment save in local
   showPrevCommentLocal() {
     window.addEventListener("DOMContentLoaded", () => {
-      const getArrayComments = JSON.parse(localStorage.getItem("comments"));
+      const getArrayComments = JSON.parse(localStorage.getItem("comments")) || [];
       const url = new URL(window.location.href);
       const getTitleUrl = url.searchParams.get("post");
 
@@ -2038,7 +2038,7 @@ class waffy {
   }
   // show number review
   generateNumberReview() {
-    const getArrayComments = JSON.parse(localStorage.getItem("comments"));
+    const getArrayComments = JSON.parse(localStorage.getItem("comments")) || [];
     const url = new URL(window.location.href);
     const getTitleUrl = url.searchParams.get("post");
 
