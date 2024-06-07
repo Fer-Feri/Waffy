@@ -34,5 +34,5 @@
 <br>
 
 ### Demo 🎥
-![CO2!](./images/readme-img-1.PNG)
+![CO2!](waffy-1-readme.PNG)
 ![CO2!](./images/readme-img-2.PNG)
