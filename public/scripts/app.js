@@ -943,7 +943,7 @@ class waffy {
       <div class="flex justify-center items-center flex-col gap-y-4 w-full md:w-[22%] border p-4 rounded-lg id="${product.id}">
       <img class="w-full h-72 object-cover rounded-lg" src="${product.srcCat}" alt="">
       <h3 class="font-lalezar text-2xl text-amber-700">${product.categoryFA}</h3>
-      <a href="shop.html?category=${product.category}" target="_blank" class="btn hover:bg-yellow-400 hover:border-yellow-400 transition-colors">مشاهده بیشتر</a>
+      <a href="shop.html?category=${product.category}" target="_blank" class="btn hover:bg-yellow-400 hover:border-yellow-400 dark:text-white dark:hover:text-black transition-colors">مشاهده بیشتر</a>
     </div>
       `;
       this.categoryContainer.insertAdjacentHTML("beforeend", htmlCategory);
