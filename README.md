@@ -45,7 +45,7 @@
 <br>
 
 ### Demo 🎥
-![waffy!](waffy-1-readme.PNG)
+![waffy!](./images/waffy-1-readme.PNG)
 ![waffy!](waffy-2-readme.PNG)
 ![waffy!](waffy-3-readme.PNG)
 ![waffy!](waffy-6-readme.PNG)
