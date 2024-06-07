@@ -1,11 +1,11 @@
 
 ## Hello FollowShip Fer-Feri 😘🤍
-<img src="https://img.shields.io/badge/my%20first%20project%20in%20github-greengold">
+<img src="https://img.shields.io/badge/A%20practice%20project%20with%20JS%20and%20Tailwind-greengold">
 
 <br>
 
 ### Link Website 
-<a href="https://waffy-nine.vercel.app/">
+<a target="_blank" href="https://waffy-nine.vercel.app/">
   <img src="https://img.shields.io/badge/Show%20me%20Waffy%20Website %F0%9F%91%86-blueviolet">
 </a>
 
@@ -19,8 +19,8 @@
 <br>
 
 ### Color Reference 🌨
-<img src="https://img.shields.io/badge/firstColor-22a55f-jade">
-<img src="https://img.shields.io/badge/secondColor-b5d651-Conifer">
+<img src="https://img.shields.io/badge/firstColor-D25E16-orange">
+<img src="https://img.shields.io/badge/secondColor-F4B323-yellow">
 
 <br>
 
