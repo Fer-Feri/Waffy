@@ -18,15 +18,16 @@
 
 <br>
 ### Capabilities 🤠
-
-
-<br>
-### Color Reference 🌨
 <img src="https://img.shields.io/badge/Dark%20Mode-133955">
 <img src="https://img.shields.io/badge/Search%20Product-007F73">
 <img src="https://img.shields.io/badge/Post%20a%20comment%20for%20any%20product%20or%20article-A0153E">
 <img src="https://img.shields.io/badge/Shop%20Filter-6DC5D1">
 <img src="https://img.shields.io/badge/Coupon%20Code-EE4E4E">
+
+<br>
+### Color Reference 🌨
+<img src="https://img.shields.io/badge/firstColor-D25E16-orange">
+<img src="https://img.shields.io/badge/firstColor-F4B323-yellow">
 
 <br>
 
