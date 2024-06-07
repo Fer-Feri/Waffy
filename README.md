@@ -46,8 +46,8 @@
 
 ### Demo 🎥
 ![waffy!](./images/waffy-1-readme.PNG)
-![waffy!](waffy-2-readme.PNG)
-![waffy!](waffy-3-readme.PNG)
-![waffy!](waffy-6-readme.PNG)
-![waffy!](waffy-4-readme.PNG)
-![waffy!](waffy-5-readme.PNG)
+![waffy!](./images/waffy-2-readme.PNG)
+![waffy!](./images/waffy-3-readme.PNG)
+![waffy!](./images/waffy-6-readme.PNG)
+![waffy!](./images/waffy-4-readme.PNG)
+![waffy!](./images/waffy-5-readme.PNG)
