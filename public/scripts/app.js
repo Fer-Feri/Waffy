@@ -165,10 +165,8 @@ class waffy {
     this.productCheckoutContainer = document.getElementById("product-checkout-container");
 
     // انتخاب المنت قیمت نهایی
-    this.totalPriceCheckout = document.getElementById('total-price-checkout')
-
+    this.totalPriceCheckout = document.getElementById("total-price-checkout");
   }
-
 
   // call all functions
   init() {
@@ -186,7 +184,7 @@ class waffy {
     this.showCategorySubMenuDesktop();
     this.showCategorySubMenuMobile();
     this.showProductCartLocal();
-    this.showSearchResult()
+    this.showSearchResult();
   }
   // call global functions
   global() {
@@ -200,7 +198,7 @@ class waffy {
     this.showCategorySubMenuDesktop();
     this.showCategorySubMenuMobile();
     this.showProductCartLocal();
-    this.showSearchResult()
+    this.showSearchResult();
   }
   // set theme dark
   setupThemeDarkToggle() {
@@ -235,9 +233,9 @@ class waffy {
     this.searchIcon.addEventListener("click", () => {
       this.searchBox.classList.toggle("active-search");
 
-      if(!this.searchBox.classList.contains('active-search')) {
-        this.searchResultBox.style.display = 'none'; //اگر کاربر روی آیکون کلید کرد نتایج جستجو هم باهاش برن
-        this.searchBox.value = ''
+      if (!this.searchBox.classList.contains("active-search")) {
+        this.searchResultBox.style.display = "none"; //اگر کاربر روی آیکون کلید کرد نتایج جستجو هم باهاش برن
+        this.searchBox.value = "";
       }
     });
   }
@@ -659,7 +657,9 @@ class waffy {
                   newObject.weight == 1000 ? "1 کیلو" : newObject.weight
                 } <span class="text-xs">${newObject.weight == 1000 ? "" : "گرم"}</span></p>
                 <p>${
-                  newObject.offPrice ? (newObject.offPrice).toLocaleString() : (newObject.price).toLocaleString()
+                  newObject.offPrice
+                    ? newObject.offPrice.toLocaleString()
+                    : newObject.price.toLocaleString()
                 } <span class="text-xs">تومان</span></p>
               </div>
             </div>
@@ -735,7 +735,7 @@ class waffy {
       <div data-id="${id}" data-weight="500"
       class="parent-product hover-border-right relative w-[45%] md:w-[30%] px-2 pb-6 rounded-lg bg-white shadow-lg cursor-pointer group" id="${id}">
       <!-- img -->
-      <div class="mb-2">
+      <div class="mb-2 flex justify-center">
         <img src="${src}" alt="" />
       </div>
       <!-- product price -->
@@ -869,7 +869,7 @@ class waffy {
         product.src
       );
 
-      this.addEventListenersToSliderButtons()
+      this.addEventListenersToSliderButtons();
 
       const url = new URL(window.location.href);
       const categoryNameProduct = url.searchParams.get("category");
@@ -900,7 +900,7 @@ class waffy {
 
       if (categoryNameProduct === product.category)
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+      this.addEventListenersToSliderButtons();
     });
   }
   // special offer in nav menu => use these function in 'defaultProductShopPage'
@@ -920,7 +920,7 @@ class waffy {
       );
       if (categoryNameProduct === "off")
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+      this.addEventListenersToSliderButtons();
     });
   }
   // find and unique product base on category
@@ -1139,7 +1139,7 @@ class waffy {
           product.src
         );
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+        this.addEventListenersToSliderButtons();
       });
     }
     if (categoryName === "400-600") {
@@ -1153,7 +1153,7 @@ class waffy {
           product.src
         );
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+        this.addEventListenersToSliderButtons();
       });
     }
     if (categoryName === "600-800") {
@@ -1167,7 +1167,7 @@ class waffy {
           product.src
         );
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+        this.addEventListenersToSliderButtons();
       });
     }
     if (categoryName === "more800") {
@@ -1181,7 +1181,7 @@ class waffy {
           product.src
         );
         this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-        this.addEventListenersToSliderButtons()
+        this.addEventListenersToSliderButtons();
       });
     }
   }
@@ -1262,7 +1262,7 @@ class waffy {
           product.src
         );
 
-        this.addEventListenersToSliderButtons()
+        this.addEventListenersToSliderButtons();
 
         if (categoryName === null)
           this.productShopContainer.insertAdjacentHTML("beforeend", listProductHtml);
@@ -1461,7 +1461,7 @@ class waffy {
             product.src
           );
           this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-          this.addEventListenersToSliderButtons()
+          this.addEventListenersToSliderButtons();
         });
       };
 
@@ -1600,7 +1600,7 @@ class waffy {
             product.src
           );
           this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-          this.addEventListenersToSliderButtons()
+          this.addEventListenersToSliderButtons();
         });
       }
       if (inputValue === "highToLow") {
@@ -1615,7 +1615,7 @@ class waffy {
             product.src
           );
           this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-          this.addEventListenersToSliderButtons()
+          this.addEventListenersToSliderButtons();
         });
       }
       if (inputValue === "normal") {
@@ -1628,7 +1628,7 @@ class waffy {
             product.src
           );
           this.productShopContainer.insertAdjacentHTML("beforeend", htmlProductShop);
-          this.addEventListenersToSliderButtons()
+          this.addEventListenersToSliderButtons();
         });
       }
       this.goToDirectProduct();
@@ -2345,7 +2345,7 @@ class waffy {
             minusBtnCart.addEventListener("click", (e) => {
               this.minusProduct(e, quantityValueInputCart, arrayCartProduct);
               this.updateTotalPriceCart();
-              this.updateMinusNumberProduct()
+              this.updateMinusNumberProduct();
             });
 
             trashBtnCart.addEventListener("click", (e) => {
@@ -2756,7 +2756,7 @@ class waffy {
       this.similarProductWrapper.insertAdjacentHTML("beforeend", htmlProduct);
     });
 
-    this.addEventListenersToSliderButtons()
+    this.addEventListenersToSliderButtons();
     // when click on icon go to direct product
     // const buttons = document.querySelectorAll(".go-to-product-page");
     // buttons.forEach((btn) => {
@@ -2778,11 +2778,11 @@ class waffy {
   // ---------------------------------------------------------------------------
   // نشان دادن محصولات خریداری شده در ص تسویه
   showProductCheckout() {
-    const arrayCartProduct = JSON.parse(localStorage.getItem('cart')) || [];
-    if(arrayCartProduct.length !== 0) {
+    const arrayCartProduct = JSON.parse(localStorage.getItem("cart")) || [];
+    if (arrayCartProduct.length !== 0) {
       // برای جمع کل قیمت ها
       let finalPriceCheckout = 0;
-      arrayCartProduct.forEach(product => {
+      arrayCartProduct.forEach((product) => {
         const htmlProductCheckout = `
         <div class="flex flex-col p-2 border gap-y-4">
         <div
@@ -2803,128 +2803,133 @@ class waffy {
             <div class="flex flex-col gap-y-2">
               <h4>${product.title}</h4>
               <p class="text-base">
-              ${product.weight == 1000 ? '1 کیلو' : `${product.weight} گرم`}
+              ${product.weight == 1000 ? "1 کیلو" : `${product.weight} گرم`}
               </p>
             </div>
           </div>
         </div>
         <!-- price -->
         <p class="text-left">
-        ${product.offPrice ? (product.offPrice).toLocaleString() : (product.price).toLocaleString()} تومان
+        ${
+          product.offPrice ? product.offPrice.toLocaleString() : product.price.toLocaleString()
+        } تومان
         </p>
       </div>
-        `
-        this.productCheckoutContainer.insertAdjacentHTML("beforeend", htmlProductCheckout)
+        `;
+        this.productCheckoutContainer.insertAdjacentHTML("beforeend", htmlProductCheckout);
         //استخراج قیمت درست در صورت داشتن محصولی با تخفیف قیمت
         const correctPrice = () => {
-          return product.offPrice ? product.offPrice : product.price
-        }
+          return product.offPrice ? product.offPrice : product.price;
+        };
         // علامت کاما قیمت رو پاک میکنیم و از حالت رشته به عدد تبدیل میکنیم
-        let ProPrice = Number(String(correctPrice()).replace(/,/g, ''))
-        let price = product.quantity * ProPrice
-        finalPriceCheckout += price
-      })
+        let ProPrice = Number(String(correctPrice()).replace(/,/g, ""));
+        let price = product.quantity * ProPrice;
+        finalPriceCheckout += price;
+      });
 
-      this.totalPriceCheckout.innerHTML = `${finalPriceCheckout.toLocaleString()} <span class="text-xs font-normal">تومان</span>`
+      this.totalPriceCheckout.innerHTML = `${finalPriceCheckout.toLocaleString()} <span class="text-xs font-normal">تومان</span>`;
     } else {
       const emptyCheckout = `
         <p class="font-sans-medium text-red-600 text-sm">محصولی انتخاب نکرده‌اید!!! برای دیدن محصولات به <a class="text-green-600" href="shop.html">فروشگاه</a> سر بزنید 🥰</p>
-      `
-      this.productCheckoutContainer.insertAdjacentHTML("beforeend", emptyCheckout)
+      `;
+      this.productCheckoutContainer.insertAdjacentHTML("beforeend", emptyCheckout);
     }
   }
   // اعمال کد تخفیف
   applyCoupon() {
-    this.inputCouponCheckout = document.getElementById('input-checkout');// اینپوت تخفیف ص تسویه
-    this.couponCheckoutBtn = document.getElementById('coupon-checkout-btn');//دکمه تخفیف ص تسویه
-    this.couponDiscountPriceElem = document.getElementById('coupon-discount-price');//المنت قیمت با تخفیف
-    this.couponDiscountPriceContainer = document.getElementById('coupon-discount-price-container');//کانتینر قیمت با تخفیف
+    this.inputCouponCheckout = document.getElementById("input-checkout"); // اینپوت تخفیف ص تسویه
+    this.couponCheckoutBtn = document.getElementById("coupon-checkout-btn"); //دکمه تخفیف ص تسویه
+    this.couponDiscountPriceElem = document.getElementById("coupon-discount-price"); //المنت قیمت با تخفیف
+    this.couponDiscountPriceContainer = document.getElementById("coupon-discount-price-container"); //کانتینر قیمت با تخفیف
 
-    this.couponCheckoutBtn.addEventListener('click', () => {
-      let totalPriceText = this.totalPriceCheckout.textContent;//گرقتن مقدار قیمت نهایی محصولات
-      const totlaPriceNumber = parseInt(totalPriceText.replace(/,/g, ''));//تبدیل کردن قیمت به عدد
+    this.couponCheckoutBtn.addEventListener("click", () => {
+      let totalPriceText = this.totalPriceCheckout.textContent; //گرقتن مقدار قیمت نهایی محصولات
+      const totlaPriceNumber = parseInt(totalPriceText.replace(/,/g, "")); //تبدیل کردن قیمت به عدد
       // کد تخفیف FB369
-      this.applyCouponNumber(totlaPriceNumber,'FB369', 0.1)
+      this.applyCouponNumber(totlaPriceNumber, "FB369", 0.1);
       // کد تخفیف AB1766
-      this.applyCouponNumber(totlaPriceNumber,'AB1766', 0.15)
+      this.applyCouponNumber(totlaPriceNumber, "AB1766", 0.15);
       // کد تخفیف SP9966
-      this.applyCouponNumber(totlaPriceNumber,'SP9966', 0.12)
-    })
+      this.applyCouponNumber(totlaPriceNumber, "SP9966", 0.12);
+    });
   }
 
   // فانکشن برای حساب کردن کد تخفیف ها
   applyCouponNumber(totlaPriceNumber, couponNum, discountNum) {
     if (this.inputCouponCheckout.value == couponNum) {
-      let discount  = totlaPriceNumber * discountNum;//10 درصد قیمت کل رو پیدا میکنیم
-      let discountPrice = totlaPriceNumber - discount//10 درصد رو از قیمت نهایی کم میکنیم
+      let discount = totlaPriceNumber * discountNum; //10 درصد قیمت کل رو پیدا میکنیم
+      let discountPrice = totlaPriceNumber - discount; //10 درصد رو از قیمت نهایی کم میکنیم
 
-      this.couponDiscountPriceContainer.style.display = 'flex'
-      this.totalPriceCheckout.classList.add('off-price')
-      this.couponDiscountPriceElem.innerHTML = `${discountPrice.toLocaleString()} <span class="text-xs font-normal">تومان</span>`
+      this.couponDiscountPriceContainer.style.display = "flex";
+      this.totalPriceCheckout.classList.add("off-price");
+      this.couponDiscountPriceElem.innerHTML = `${discountPrice.toLocaleString()} <span class="text-xs font-normal">تومان</span>`;
     }
   }
 
   // انتخاب استان و شهر از ص پرداخت
   chooseProvinceAndCitiesCheckout() {
-    this.provinceInput = document.getElementById('province-input')
-    this.citiesInput = document.getElementById('cities-input')
+    this.provinceInput = document.getElementById("province-input");
+    this.citiesInput = document.getElementById("cities-input");
     // چاپ کردن لیست استان‌ها
-    iranProvincesAndCities.forEach(item => {
+    iranProvincesAndCities.forEach((item) => {
       // استخراج لیست استان‌ها
-      const {province} = item;
+      const { province } = item;
       const htmlProvince = `
       <option value="${province}">${province}</option>
-      `
-      this.provinceInput.insertAdjacentHTML("beforeend", htmlProvince)
-    })
-    
+      `;
+      this.provinceInput.insertAdjacentHTML("beforeend", htmlProvince);
+    });
+
     //حذف آپشن اولیه انتخاب کنید از اینپوت استان
-    this.provinceInput.addEventListener('change', () => {
-      this.poochProvince = document.getElementById('pooch-province')
-      this.poochProvince.style.display = 'none'
-    })
+    this.provinceInput.addEventListener("change", () => {
+      this.poochProvince = document.getElementById("pooch-province");
+      this.poochProvince.style.display = "none";
+    });
 
     // چاپ کردن لیست شهرها بر اساس انتخاب استان‌
-    this.provinceInput.addEventListener('change', () => {
-      let nameProvince = this.provinceInput.value;//گرفتن اسم استان از اینپوت استان
+    this.provinceInput.addEventListener("change", () => {
+      let nameProvince = this.provinceInput.value; //گرفتن اسم استان از اینپوت استان
 
-      const findProvince = iranProvincesAndCities.find(item => item.province === nameProvince);//پیدا کردن آبجکتی که اسم استان همنام با اینپوت استان داره
+      const findProvince = iranProvincesAndCities.find((item) => item.province === nameProvince); //پیدا کردن آبجکتی که اسم استان همنام با اینپوت استان داره
       // استخراج لیست شهرها بر اساس لیست استان‌ها
-      const {cities} = findProvince;
+      const { cities } = findProvince;
       // خالی کردن آپشن اینپوت
-      this.citiesInput.innerHTML = '';
+      this.citiesInput.innerHTML = "";
 
-      cities.forEach(city => {
+      cities.forEach((city) => {
         const htmlCity = `
         <option value="${city}">${city}</option>
-        `
-        this.citiesInput.insertAdjacentHTML("beforeend", htmlCity)
-      })
-      
-    })
+        `;
+        this.citiesInput.insertAdjacentHTML("beforeend", htmlCity);
+      });
+    });
   }
 
   // ---------------------------------------------------------------------------
   // ----------------------------- search ---------------------------------
   // ---------------------------------------------------------------------------
   showSearchResult() {
-    this.searchBox.addEventListener('keyup', () => {
+    this.searchBox.addEventListener("keyup", () => {
       let searchValue = this.searchBox.value;
-      
-      if(searchValue.length >= 3) {
+
+      if (searchValue.length >= 3) {
         // فیلتر کردن محصولاتی که با سرچ مطابقت دارند
-        const matchedProducts = allProducts.filter(product => {
+        const matchedProducts = allProducts.filter((product) => {
           const { title } = product;
           return title.includes(searchValue); // تبدیل به حروف کوچک برای تطبیق درست
         });
-        
-        this.searchResultBox.style.display = 'flex';//نمایان شدن باکس نتیجه سرچ
-        this.searchResultBox.innerHTML = ''; // پاک کردن نتایج قبلی
-  
-        if(matchedProducts.length > 0) {
+
+        this.searchResultBox.style.display = "flex"; //نمایان شدن باکس نتیجه سرچ
+        this.searchResultBox.innerHTML = ""; // پاک کردن نتایج قبلی
+
+        if (matchedProducts.length > 0) {
           matchedProducts.forEach((product, index) => {
             const htmlProResult = `
-              <a href="product.html?product=${product.title}" class="flex items-center justify-between gap-x-2 pb-3 ${index === matchedProducts.length - 1 ? '' : 'border-b border-b-slate-800'}">
+              <a href="product.html?product=${
+                product.title
+              }" class="flex items-center justify-between gap-x-2 pb-3 ${
+              index === matchedProducts.length - 1 ? "" : "border-b border-b-slate-800"
+            }">
                 <img class="w-10 h-10" src="${product.src}" alt="">
                 <p class="text-amber-400">${product.title}</p>
                 <p class="text-amber-400">${product.price.toLocaleString()}</p>
@@ -2933,13 +2938,13 @@ class waffy {
             this.searchResultBox.insertAdjacentHTML("beforeend", htmlProResult);
           });
         } else {
-          this.searchResultBox.innerHTML = '<p class="text-amber-400 text-center">محصولی یافت نشد...!</p>';
+          this.searchResultBox.innerHTML =
+            '<p class="text-amber-400 text-center">محصولی یافت نشد...!</p>';
         }
       } else {
-        this.searchResultBox.style.display = 'none'; // مخفی کردن نتیجه جستجو در صورت کمتر بودن از 3 کاراکتر
+        this.searchResultBox.style.display = "none"; // مخفی کردن نتیجه جستجو در صورت کمتر بودن از 3 کاراکتر
       }
     });
   }
-  
 }
 export default new waffy();
