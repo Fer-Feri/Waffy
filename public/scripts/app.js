@@ -487,7 +487,7 @@ class waffy {
       <div data-id="${id}" data-weight="500"
         class="swiper-slide parent-product hover-border-right relative w-1/2 md:w-1/5 px-2 pb-6 rounded-lg bg-white shadow-lg cursor-pointer group" id="${id}">
         <!-- img -->
-        <div class="mb-2 text-center">
+        <div class="mb-2 text-center flex justify-center">
           <img src="${src}" alt="" />
         </div>
         <!-- product price -->
